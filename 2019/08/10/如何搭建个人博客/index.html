@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>我的第一篇博客 | Hexo</title>
+  <title>如何搭建个人博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="如何搭建静态个人博客网站一.准备工作1.下载安装node.js2. 下载一个hexo快速简洁且高效博客框架3. 最后推送到个人github仓库4.参考文献: www.codesheep.cn">
+  <meta name="description" content="如何搭建个人的博客(-)此文介绍hexo的建站流程基于B站视频 以下步骤都基于w10系统下演示。 01. 安装Node.js（https://nodejs.org/en/）安装步骤非常简单一直点next，默认安装就行,通过node.js-v npm -v检测是否安装成功。 02.安装git git网址：https://git-scm.com/downloads 然后我们选择windows版本的下载">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客">
-<meta property="og:url" content="http://yoursite.com/2019/08/09/我的第一篇博客/index.html">
+<meta property="og:title" content="如何搭建个人博客">
+<meta property="og:url" content="http://yoursite.com/2019/08/10/如何搭建个人博客/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="如何搭建静态个人博客网站一.准备工作1.下载安装node.js2. 下载一个hexo快速简洁且高效博客框架3. 最后推送到个人github仓库4.参考文献: www.codesheep.cn">
+<meta property="og:description" content="如何搭建个人的博客(-)此文介绍hexo的建站流程基于B站视频 以下步骤都基于w10系统下演示。 01. 安装Node.js（https://nodejs.org/en/）安装步骤非常简单一直点next，默认安装就行,通过node.js-v npm -v检测是否安装成功。 02.安装git git网址：https://git-scm.com/downloads 然后我们选择windows版本的下载">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-09T13:19:35.842Z">
+<meta property="og:updated_time" content="2019-08-10T08:40:25.119Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的第一篇博客">
-<meta name="twitter:description" content="如何搭建静态个人博客网站一.准备工作1.下载安装node.js2. 下载一个hexo快速简洁且高效博客框架3. 最后推送到个人github仓库4.参考文献: www.codesheep.cn">
+<meta name="twitter:title" content="如何搭建个人博客">
+<meta name="twitter:description" content="如何搭建个人的博客(-)此文介绍hexo的建站流程基于B站视频 以下步骤都基于w10系统下演示。 01. 安装Node.js（https://nodejs.org/en/）安装步骤非常简单一直点next，默认安装就行,通过node.js-v npm -v检测是否安装成功。 02.安装git git网址：https://git-scm.com/downloads 然后我们选择windows版本的下载">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -47,10 +47,10 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/assets/avator.jpg" class="js-avatar">
+			<img src="/assets/img/avator.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">勿忘初心梦与歌</a></h1>
 		</hgroup>
 		
 
@@ -60,6 +60,8 @@
 				<li><a href="/">主页</a></li>
 	        
 				<li><a href="/tags/随笔/">随笔</a></li>
+	        
+				<li><a href="/archives/index.html">归档</a></li>
 	        
 			</ul>
 		</nav>
@@ -85,11 +87,9 @@
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
 					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
-					<a class="qq" target="_blank" href="/assets/qq.png" title="qq"><i class="icon-qq"></i></a>
+					<a class="qq" target="_blank" href="/assets/img/qq.png" title="qq"><i class="icon-qq"></i></a>
 		        
 					<a class="mail" target="_blank" href="mailto:1649789608@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
@@ -109,13 +109,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/assets/avator.jpg" class="js-avatar">
+				<img src="/assets/img/avator.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">勿忘初心梦与歌</h1>
 			</hgroup>
 			
 			
+			
+				
 			
 				
 			
@@ -130,11 +132,9 @@
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
 						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
-						<a class="qq" target="_blank" href="/assets/qq.png" title="qq"><i class="icon-qq"></i></a>
+						<a class="qq" target="_blank" href="/assets/img/qq.png" title="qq"><i class="icon-qq"></i></a>
 			        
 						<a class="mail" target="_blank" href="mailto:1649789608@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
@@ -142,12 +142,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/随笔/">随笔</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
 		        
 				</ul>
 			</nav>
@@ -162,27 +164,59 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-如何搭建个人博客" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇博客
+      如何搭建个人博客
     </h1>
   
 
         
-        <a href="/2019/08/09/我的第一篇博客/" class="archive-article-date">
-  	<time datetime="2019-08-09T12:47:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-09</time>
+        <a href="/2019/08/10/如何搭建个人博客/" class="archive-article-date">
+  	<time datetime="2019-08-10T06:15:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="如何搭建静态个人博客网站"><a href="#如何搭建静态个人博客网站" class="headerlink" title="如何搭建静态个人博客网站"></a>如何搭建静态个人博客网站</h2><h3 id="一-准备工作"><a href="#一-准备工作" class="headerlink" title="一.准备工作"></a>一.准备工作</h3><h3 id="1-下载安装node-js"><a href="#1-下载安装node-js" class="headerlink" title="1.下载安装node.js"></a>1.下载安装node.js</h3><h3 id="2-下载一个hexo快速简洁且高效博客框架"><a href="#2-下载一个hexo快速简洁且高效博客框架" class="headerlink" title="2. 下载一个hexo快速简洁且高效博客框架"></a>2. 下载一个hexo快速简洁且高效博客框架</h3><h3 id="3-最后推送到个人github仓库"><a href="#3-最后推送到个人github仓库" class="headerlink" title="3. 最后推送到个人github仓库"></a>3. 最后推送到个人github仓库</h3><h3 id="4-参考文献-www-codesheep-cn"><a href="#4-参考文献-www-codesheep-cn" class="headerlink" title="4.参考文献: www.codesheep.cn"></a>4.参考文献: <a href="http://www.codesheep.cn" target="_blank" rel="noopener">www.codesheep.cn</a></h3>
+        <h2 id="如何搭建个人的博客"><a href="#如何搭建个人的博客" class="headerlink" title="如何搭建个人的博客(-)"></a>如何搭建个人的博客(-)</h2><h3 id="此文介绍hexo的建站流程"><a href="#此文介绍hexo的建站流程" class="headerlink" title="此文介绍hexo的建站流程"></a>此文介绍hexo的建站流程</h3><p>基于B站视频 以下步骤都基于w10系统下演示。</p>
+<h4 id="01-安装Node-js（https-nodejs-org-en-）"><a href="#01-安装Node-js（https-nodejs-org-en-）" class="headerlink" title="01. 安装Node.js（https://nodejs.org/en/）"></a>01. 安装Node.js（<a href="https://nodejs.org/en/）" target="_blank" rel="noopener">https://nodejs.org/en/）</a></h4><p>安装步骤非常简单一直点next，默认安装就行,通过node.js-v npm -v检测是否安装成功。</p>
+<h4 id="02-安装git"><a href="#02-安装git" class="headerlink" title="02.安装git"></a>02.安装git</h4><ul>
+<li>git网址：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a> 然后我们选择windows版本的下载。</li>
+<li>安装也是一直点下一步，安装官方默认的来就行，安装完后在开始菜单可以看到。</li>
+<li>tips：这个Git Bash下载下来就相当于Linux中的终端窗口了，以后我们就用这个东西来打开终端。</li>
+</ul>
+<h4 id="03-安装hexo"><a href="#03-安装hexo" class="headerlink" title="03.安装hexo"></a>03.安装hexo</h4><ul>
+<li><p>hexo是需要node.js来生成的，借助npm这个包管理器来安装hexo框架。</p>
+<blockquote>
+<p>先安装一个cnpm，npm安装插件是从国外服务器下载，手网络的影响较大，可能会出现异常，如果npm的服务器在中国就好了，所以我们乐于分享的淘宝团队干了这事。来自官网：“这是一个完整 npmjs.org 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10分钟 一次以保证尽量与官方服务同步。” 。</p>
+</blockquote>
+<blockquote>
+<p>安装命令是：npm install cnpm -g –registry=<a href="https://registry.npm.taobao" target="_blank" rel="noopener">https://registry.npm.taobao</a></p>
+</blockquote>
+</li>
+</ul>
+<p>1 下载安装后，测试是否安装成功。<br>cnpm -v<br>可以看到当前安装后的版本号<a href="mailto:cnpm@6.1.0" target="_blank" rel="noopener">cnpm@6.1.0</a> 。</p>
+<p>2 下一步安装hexo<br>验证是否安装成功hexo -v<br>出现以下说明成功了。</p>
+<blockquote>
+<p>hexo: 3.8.0<br>hexo-cli: 1.1.0<br>os: Windows_NT 10.0.17134 win32 x64<br>http_parser: 2.8.0<br>node: 10.15.3<br>v8: 6.8.275.32-node.51<br>uv: 1.23.2<br>zlib: 1.2.11<br>ares: 1.15.0<br>modules: 64<br>nghttp2: 1.34.0<br>napi: 3<br>openssl: 1.1.0j<br>icu: 62.1<br>unicode: 11.0<br>cldr: 33.1<br>tz: 2018e</p>
+</blockquote>
+<p>首先看看当前路径命令pwd可以显示你当前所在的目录位置。<br>运行命令，这步是关键，主要是建立整个项目，这里我的文件夹名字是kuku，文件夹位置的是桌面上。<br>hexo init你当前所在的文件夹下会生成一堆默认的文件暂时先不用去管他。</p>
+<h4 id="04-运行测试。"><a href="#04-运行测试。" class="headerlink" title="04.运行测试。"></a>04.运行测试。</h4><p>这里我们经常用到的有三个命令</p>
+<ul>
+<li>hexo clean #用来清理缓存文件</li>
+<li>hexo g      #生成文件</li>
+<li>hexo  s     #运行本地服务器</li>
+<li>hexo  d   #上传到服务器</li>
+</ul>
+<p>我们运行hexo s<br>打开浏览器，输入localhost:4000,就能看到你本地创建好的页面</p>
+<h6 id="说明本地搭建完成。。。"><a href="#说明本地搭建完成。。。" class="headerlink" title="说明本地搭建完成。。。"></a>说明本地搭建完成。。。</h6><p>其余的内容请看下一篇文章。</p>
+
       
 
       
@@ -261,7 +295,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/09/我的第一篇博客/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/10/如何搭建个人博客/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -273,16 +307,6 @@
 </article>
 
   
-<nav id="article-nav">
-  
-  
-    <a href="/2019/08/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -320,7 +344,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 John Doe
+    		&copy; 2019 勿忘初心梦与歌
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
